@@ -1,0 +1,398 @@
+NOTES: 04-06-2023
+
+FullStack
+    - HTML/CSS
+    - Bootstrap
+    - JavaScript
+    - jQuery (introduction)
+    - ReactJs
+    - NodeJs
+    - ExpressJs
+    - MongoDB
+    - GitHub
+
+    - 6 Months
+
+    - HTML
+        - Tables - 1
+    - CSS
+        - Float - 1
+        - Inline Block - 1
+        - Flex / Flexbox - 1
+        - Grid - 1
+
+    - Responsiveness
+        - Flexbox - 1
+        - Grid - 1
+
+    - Bootstrap
+        - Bootstrap - 1
+
+    - JavaScript
+        - Assignments - 35
+        - Online - Problem Solving - 1/day = 28/30/31
+
+    - ReactJs
+        - ReactJs - 3
+
+    - NodeJs/ExpressJs
+        - NodeJs/ExpressJs - 1
+
+    - MongoDB
+        - MongoDB - 1
+
+    = HTML/CSS/JavaScript/ReactJs/NodeJs/ExpressJs/MongoDB = 1
+
+
+Official Communication
+    - WhatsApp Group
+        - Notes
+        - PPTs / Full PPTs
+        - Assignments Sharing
+        - Project Work Sharing
+        - Any Doubts Clarification
+        - Notifications/Announcements
+
+        - DONT DOs
+            - Dont misuse the group members / phone
+            - Welcome...
+            - Sharing...
+
+SDLC
+    - Software Development Life Cycle
+        - Analysis          - 20%/35%   20%/35%/30%     35%/25%     40% 30%
+        - Design            - 20%       20%/25%/20%     10%/25%     20% 20%/30%
+        - Implementation    - 20%       20%             10%/20%     20% 20%
+        - Testing           - 30%/20%   20%/15%/20%     35%/20%     10% 20%/10%
+        - Deployment        - 10%/5%    20%/5%/10%      10%         10% 10%     
+
+            - Project Completion            = 100%
+
+        - Maintenance
+
+    - IT Project
+        - Pseudo Code
+            - Step By Step Instructions in Human understandable language
+
+Project
+    - Website Development
+        - Design is available
+            - Phase 1 (Analysis)
+                - Layout / Blueprint
+                    - Title
+                    - Header
+                        - table
+                    - Body
+                        - Title / Heading
+                        - Projects List
+                    - Footer
+                        - Title / Heading
+                        - Table
+                            - Information
+                        - Copyright
+                    - Color
+                        - Text / Content
+                        - Background
+                    - Size
+                        - Text / Content / Layout / Structure
+                    - Pictures / Photos
+                    - List
+                    - Structure
+            - Phase 2 (Design)
+                - Pseudo Code
+                    - Create Head with background gray
+                        - Position image on left and information on the right
+                        - information on the right
+                            - 1st line in h1
+                            - 2nd line in text
+                            - 3rd line in text
+                            - 4th line in light blue text background
+                    - Create a Table
+                        - center aligned
+                        - apply gray color for table
+                        - set about / project / contact column wise
+                        - set anchor / link to the column content
+                    - Create a Table with 3 columns and 2 rows
+                        - center align text "Project/Experience"
+                        - each column will have a picture and below it will have project title and description
+                    - Center align title text "About Me"
+                        - create table with 2 columns
+                            - left column in background white
+                                - 1st line in heading
+                                - 2nd line as list items
+                            - right column in background dark gray
+                                - 1st line in heading
+                                - 2nd line as list items
+                    - footer with center aligned copyright text
+            - Phase 2 (Design) - REMODIFIED
+                - Pseudo Code
+                    - 8 Rows
+                        - 1st row
+                            - 2 columns
+                        - 2nd row
+                            - 3 columns
+                        - 3rd row
+                            - 1 column
+                        - 4th & 5th row
+                            - 3 columns
+                        - 6th row
+                            - 1 column
+                        - 7th row
+                            - 2 columns
+                        - 8th row
+                            - 1 column
+
+
+NOTES: 10-06-2023
+
+Languages:
+    - Markup
+        - HTML, XML
+    - Scripting
+        - Client
+            - JavaScript
+        - Server
+            - NodeJs
+            - PHP
+            - ASP
+            - JSP
+    - Programming
+        - Java
+        - Python
+        - .Net
+        - C/C++
+
+Syntax
+    - Pattern
+
+HTML
+    - Syntax
+        - Tags or elements or containers or fragments
+            <NAME OF TAG> => opening tag
+                ..... content / text ... 
+            </NAME OF TAG> => closing tag
+
+            - Types
+                - Paired Tag
+                    <TAG NAME>
+                        ....
+                    </TAG NAME>
+                - Unpaired Tag or Self Closing Tag
+                    <TAG NAME>
+                    or
+                    <TAG NAME />
+
+Editior vs IDE (Integrated Development Environment)
+    - 
+
+Basic Coding Standards
+    - Organise
+    - Faster
+    - Responsive
+    - Efficient Code
+    - Documentation
+    - Understanding
+
+    - Meaningful Names
+        - DONT
+            - use spaces
+            - start with numbers
+        - patterns / Cases
+            lower camel case
+                firstHtmlProject
+            upper camel case
+                FirstHtmlProject
+            lowercase
+                firsthtmlproject
+            uppercase
+                FIRSTHTMLPROJECT
+            snake case
+                first_html_project
+            dashed case
+                first-html-project
+    
+    - Code Indentation
+        - Tab Spaces
+            - 4 space = 1 tab space
+            - it can be customized to either 4 spaces or 2 spaces   
+
+    - Filename
+        name of the file + .extn
+
+    - Organising the Folder and Files
+        - june-offline-batch-2023
+            - css/
+                .css
+            - images/ or /img or /image or /media
+                ... all kinds of images/pictures...
+            - js/
+                .js
+            - .html
+
+
+
+NOTES: 11-06-2023
+
+HTML5 
+    - DOCTYPE
+        <!doctype html>
+
+HTML4
+    - DOCTYPE
+        3 Types
+            - Loose
+            - Transitional
+            - Strict
+
+Deprecated
+    - marked for deletion
+
+Tags:
+    - Types
+        - Paired
+        - Unpaired
+
+    - Classifications
+        - Block
+            - irrespective of the content, the container occupies the full width/size of the parent container/tag
+        - Inline
+            - the content size is the size of the container
+
+Tags:
+    strong = bolded text
+        - previously used one:
+            <b></b> = Deprecated
+
+    em => italic
+        - previously used one:
+            <i></i> = Deprecated
+    
+    pre -> preservation or presentation
+        - keeps intact of all the spaces, gaps, code indents as it is...
+
+HTML Attributes:
+    Types
+        - Paired
+        - Unpaired / Self Closing
+
+    Classifications:
+        - Core
+            id
+            class
+            style
+            title
+        - Generic
+        - Custom
+            data-<any name>
+
+Table vs Tabular Column
+
+HTML Comments:
+    - Documentation
+    - To Hide the code from output
+
+        <!--
+            ...
+        -->
+
+HTML Measurements:
+    2 Types
+        px
+            just value is enough
+                width="10"
+        %
+            should be mentioned
+                width="10%"
+
+Assignment #1:
+    - Go through all the topics covered, which might be required for presentation
+
+Assignment #2:
+    - Template convert into TABLE (individuals)
+
+
+NOTES: 18-06-2023
+
+HTML
+    img
+        - src
+            - file name of the picture/image
+            - path
+                - relative path
+                - physical path
+                - absolute path - NEVER USE THIS...
+
+HTML Tags
+    Clarification
+        - Block
+            which occupies the entire row of the parent container/tag
+        - Inline
+            whatever the content size is, the same is for the container size
+
+In Web Development
+    - CRIME
+        - Horizontal Scrollbar in your Browser
+
+Project/Assignment Sharing in GitHub
+    - Code link
+        https://github.com/srinanoo/june-offline-batch-2023.git
+    - Output link
+        https://srinanoo.github.io/june-offline-batch-2023/first-page.html
+
+
+NOTES: 24-06-2023
+
+Assignment #3:
+    Named Frame
+        - Frame kulla link...
+
+Assignment #4:
+    Named anchor
+        - 2 Parts
+            - Single Page
+            - Multiple Pages (2 pages or individual separate pages)
+
+
+NOTES: 25-06-2023
+
+Project #1:
+    Forms: (140)
+        - Bio-Data
+        - Registration - Website, Stamp Duty, Vehicle, Realestate
+        - Signup
+        - Signin
+        - Subscription
+        - Checkout
+        - Payment
+        - Govt - PF, Birth, Death, Aadhaar, PAN, VoterId, Ration (Smart Card), Passport, License, Trademark, Company Registration, Bus Pass, Train Pass, Metro Pass, Fastrack, Exams (TNPSC, NPSC, SSE, UPSE), PF, VISA, Immigration, FIR, Case Filing, Water, Sewage, Challans, GAS, DSC
+        - Railway - Reservation, Refund, Cancellation
+        - Income Tax - Filing, Returns, Claims, Registration
+        - Banking - Account Opening, Closing, Mutual Funds, Debit Card, Credit Card, Deposit, Withdrawal, KYC, Complaint, Loan, FD, RD, DD, Beneficiary, UPI, NOC
+        - Education - Application, Certificates, OD, Scholarships, Renewal, Fees, Results
+        - Hospital - Admission, Discharge, Concern, Declaration, Payment, Insurance, Results, Feedback
+        - Travel Agency - Ticket Booking, Refund, Cancellation, Payment
+        - Money Exchange - Deposit, Refund, Cancellation
+        - Contact
+        - Feedback
+        - Waitlist / Wishlist
+        - Company - Application, Resignation, Apology
+        - Ecommerce - Profile, Orders, Payments, Assurance, Returns, Complaince
+        - Appointments
+        - NSDL
+        - NRI
+        - Export, Import, Bill of Lading, Clearance, NOC
+        - Internship
+        - Enquiry
+        - Implant Training
+        - Leave Application
+        - Bonafide
+        - EB - Conversion, Bills, Subsidary
+        - Pregancy
+        - DTH
+        - Windmill
+        - Profile
+        - Courier - Booking, Tracking, Cancellation
+        - Ticket - Movie, Sports, Shows, Boat, Cruise, Submarine, Scuba, Surfing, Rafting, Theme Park, Hotel, Sky Diving, Para Gliding, Motor Riding, Mueseum, Skiing, Zip Lining
+        - Trust - Charity, Registration
+        - Organ
+        - Chit Funds
