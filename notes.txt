@@ -396,3 +396,33 @@ Project #1:
         - Trust - Charity, Registration
         - Organ
         - Chit Funds
+
+
+NOTES: 08-07-2023
+
+CSS Selectors:
+    - universal
+    - type
+        type
+        type + class
+        type + id
+        type + descendant
+        type + child
+    - class
+        class
+        class + attribute
+        class + descendant
+        class + child
+    - id
+        id
+        id + attribute
+        id + descendant
+        id + child
+    - attribute
+        attribute
+        attribute + value
+        type + attribute + value
+    - descendant
+    - child
+
+    
