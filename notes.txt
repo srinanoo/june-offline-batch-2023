@@ -426,3 +426,11 @@ CSS Selectors:
     - child
 
     
+NOTES: 22-07-2023
+
+HTML TAG
+    <TAGNAME>
+        ::before => in JS - prepend()
+        .... content / container ....
+        ::after => in JS - append()
+    </TAGNAME>

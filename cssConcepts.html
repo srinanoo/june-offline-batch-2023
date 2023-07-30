@@ -41,7 +41,7 @@
             background-color: aqua;
         }
 
-        ul {
+        /* ul {
             list-style: none;
             padding: 0;
         }
@@ -49,7 +49,7 @@
             display: inline-block;
             background-color: yellow;
             padding: 5px;
-        }
+        } */
 
         nav div a {
             text-decoration: none;
@@ -58,11 +58,114 @@
             background-color: yellow;
             display: inline-block;
         }
+
+        a, a:link {
+            color: red;
+        }
+
+        a:hover {
+            color: green;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: burlywood;
+        }
+
+        div:hover {
+            border: solid;
+            background-color: red;
+            cursor: pointer;
+        }
+        #txt1:focus {
+            background-color: red;
+            color: white;
+        }
+
+        /* li:first-child {
+            background-color: orange;
+            padding-left: 0;
+        }
+        li:last-child {
+            background-color: green;
+            padding-right: 0;
+        } */
+
+        /* li:nth-child(n+1) {
+            background-color: red;
+        } */
+
+        p::first-letter {
+            font-size: 50px;
+        }
+        p::first-line {
+            color: red;
+            text-align: center;
+        }
+
+        div div::before {
+            content: " * "
+        }
+        div div::after {
+            content: " - this content ends here... "
+        }
     </style>
 </head>
 <body>
 
-    <nav>
+    <div>
+        Container
+    </div>
+
+    <!-- <ul>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ul>
+
+    <div>
+        <div>Item</div>
+        <div>Item</div>
+        <div>Item</div>
+        <div>Item</div>
+        <div>Item</div>
+        <div>Item</div>
+        <div>Item</div>
+    </div> -->
+
+    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam culpa maxime et eaque dolorum fugiat, doloribus eveniet amet nemo blanditiis est in atque placeat molestiae earum delectus id ut laudantium!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores deleniti exercitationem quae, maxime aliquid explicabo possimus totam laborum molestiae corrupti. Dignissimos reiciendis in explicabo impedit numquam, quae laboriosam optio. Dolorem.</p> -->
+
+    <!-- <ul>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ul> -->
+
+    <!-- <a href="https://google.com">Click Here</a>
+
+    <div>
+        Div Container
+    </div>
+
+    <input type="text"><br>
+    <input type="text"><br>
+    <input type="text"><br>
+    <input type="text" id="txt1"><br>
+    <input type="text"><br>
+    <input type="text"><br> -->
+
+
+    <!-- <nav>
         <ul>
             <li>Menu 1</li>
             <li>Menu 1</li>
@@ -80,7 +183,7 @@
             <a href="#">Menu 1</a>
             <a href="#">Menu 1</a>
         </ul>
-    </nav>
+    </nav> -->
     
 </body>
 </html>

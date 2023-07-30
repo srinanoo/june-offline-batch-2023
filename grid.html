@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        img {
+            max-width: 100%;
+        }
+        .flex .row {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: purple;
+        }
+        .flex .row div {
+            background-color: pink;
+            margin: 5px;
+        }
+
+        .grid .row {
+            background-color: purple;
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        .grid .row div {
+            background-color: pink;
+            margin: 5px;
+        }
+
+        .header {
+            grid-area: head;
+        }
+        .nav {
+            grid-area: nav;
+        }
+        .main {
+            grid-area: main;
+        }
+        .aside {
+            grid-area: side;
+        }
+        .footer {
+            grid-area: foot;
+        }
+
+        .grid {
+            background-color: purple;
+            display: grid;
+            grid-template-areas: 
+                "head head head nav nav nav"
+                "main main main main side side"
+                "foot foot foot foot foot foot"
+            ;
+            gap: 5px;
+        }
+        .grid div {
+            background-color: pink;
+        }
+        section {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        section article {
+            width: 33.3333333%;
+        }
+
+        /* div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+        }
+        div:hover {
+            background-color: antiquewhite;
+        }
+        .fb:hover {
+            color: red;
+            background-color: pink;
+        } */
+
+        .social {
+            width: 57px;
+            height: 57px;
+            background-image: url('images/facebook.png');
+        }
+        .social:hover {
+            background-image: url('images/facebook-o.png');
+        }
+        .fb {
+            width: 57px;
+            height: 58px;
+            display: inline-block;
+            background-image: url('images/sprites.png');
+        }
+        .fb:hover {
+            background-position: 0 -99px;
+        }
+        .rss {
+            width: 57px;
+            height: 58px;
+            display: inline-block;
+            background-image: url('images/sprites.png');
+            background-position: -60px 0;
+        }
+        .rss:hover {
+            background-position: -62px -101px;
+        }
+        .linkedin {
+            width: 57px;
+            height: 58px;
+            display: inline-block;
+            background-image: url('images/sprites.png');
+            background-position: -120px 0;
+        }
+        .linkedin:hover {
+            background-position: -120px -101px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="social-media">
+        <div class="fb"></div>
+        <div class="rss"></div>
+        <div class="linkedin"></div>
+        <div class="pinterest"></div>
+    </div>
+
+    <br><br>
+
+    <div class="social">
+        <!-- <img src="images/facebook.png" alt="" class="fb">
+        <img src="images/facebook-o.png" alt="" class="fbo"> -->
+    </div>
+
+    <i class="fa-brands fa-facebook fb"></i>
+
+    <img src="images/background.jpeg" alt="">
+
+    <div>Div</div>
+
+    <div class="grid">
+        <div class="header">Header</div>
+        <div class="nav">Nav</div>
+        <div class="main">
+            <section>
+                <article>
+                    <img src="images/background.jpeg" alt="">
+                    <p>Project 1</p>
+                </article>
+                <article>
+                    <img src="images/background.jpeg" alt="">
+                    <p>Project 1</p>
+                </article>
+                <article>
+                    <img src="images/background.jpeg" alt="">
+                    <p>Project 1</p>
+                </article>
+            </section>
+        </div>
+        <div class="aside">Aside</div>
+        <div class="footer">Footer</div>
+    </div>
+
+    <!-- <div class="flex">
+        <div class="row">
+            <div>Div 1</div>
+            <div>Div 2</div>
+            <div>Div 3</div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="grid">
+        <div class="row">
+            <div>Div 1</div>
+            <div>Div 2</div>
+            <div>Div 3</div>
+            <div>Div 4</div>
+            <div>Div 5</div>
+            <div>Div 6</div>
+            <div>Div 7</div>
+            <div>Div 8</div>
+            <div>Div 9</div>
+            <div>Div 10</div>
+            <div>Div 11</div>
+            <div>Div 12</div>
+        </div>
+    </div> -->
+
+    
+    
+</body>
+</html>

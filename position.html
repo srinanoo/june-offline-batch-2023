@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        img {
+            max-width: 100%;
+        }
+        body {
+            margin: 0;
+        }
+        /* div {
+            position: absolute;
+            width: 100px;
+            height: 70px;
+        } */
+        .div1 {
+            background-color: red;
+        }
+        .div2 {
+            background-color: blue;
+        }
+        .div3 {
+            background-color: green;
+        }
+        .div4 {
+            background-color: aqua;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: yellow;
+        }
+        .submenu {
+            position: absolute;
+            background-color: cyan;
+            padding: 5px;
+            margin-left: -10px;
+            margin-top: 5px;
+            display: none;
+        }
+        .submenu a {
+            text-decoration: none;
+            color: red;
+        }
+        li:hover .submenu {
+            display: block;
+        }
+        .box {
+            width: 125px;
+            height: 125px;
+            border: solid;
+        }
+        .close {
+            position: absolute;
+            margin-top: 45px;
+            margin-left: 50px;        
+        }
+        .background {
+            position: absolute;
+        }
+        .content {
+            z-index: -1;
+        }
+        .box:hover .content {
+            z-index: 0;
+        }
+
+        .left {
+            background-color: yellow;
+            width: 25%;
+            position: fixed;
+            height: 100vh;
+        }
+        .right {
+            background-color: green;
+            width: 75%;
+            margin-left: 25%;
+        }
+        .top {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+        .left p, section p {
+            margin-top: 0;
+        }
+        .sticky {
+            position: sticky;
+            background-color: yellow;
+            top:0;
+        }
+    </style>
+</head>
+<body>
+
+    <a name="top"></a>
+
+    <a href="#top"><img src="images/arrow2.png" class="top" width="25"></a>
+
+    <div class="container">
+        <div class="left">
+            <p>Left Container</p>
+            <p>Logo</p>
+            <ul>
+                <li>Link 1</li>
+                <li>Link 1</li>
+                <li>Link 1</li>
+                <li>Link 1</li>
+                <li>Link 1</li>
+            </ul>
+        </div>
+        <div class="right">
+            <section>
+                <p><img src="images/1e650f11-7d32-43fc-8d6e-5b15e5747558.jpg"></p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius perspiciatis similique obcaecati, neque nemo consequatur reiciendis at ea natus, sunt error saepe vero assumenda explicabo animi quas ipsam vitae eaque?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius perspiciatis similique obcaecati, neque nemo consequatur reiciendis at ea natus, sunt error saepe vero assumenda explicabo animi quas ipsam vitae eaque?</p>
+                <p class="sticky">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius perspiciatis similique obcaecati, neque nemo consequatur reiciendis at ea natus, sunt error saepe vero assumenda explicabo animi quas ipsam vitae eaque?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius perspiciatis similique obcaecati, neque nemo consequatur reiciendis at ea natus, sunt error saepe vero assumenda explicabo animi quas ipsam vitae eaque?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius perspiciatis similique obcaecati, neque nemo consequatur reiciendis at ea natus, sunt error saepe vero assumenda explicabo animi quas ipsam vitae eaque?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius perspiciatis similique obcaecati, neque nemo consequatur reiciendis at ea natus, sunt error saepe vero assumenda explicabo animi quas ipsam vitae eaque?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius perspiciatis similique obcaecati, neque nemo consequatur reiciendis at ea natus, sunt error saepe vero assumenda explicabo animi quas ipsam vitae eaque?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius perspiciatis similique obcaecati, neque nemo consequatur reiciendis at ea natus, sunt error saepe vero assumenda explicabo animi quas ipsam vitae eaque?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius perspiciatis similique obcaecati, neque nemo consequatur reiciendis at ea natus, sunt error saepe vero assumenda explicabo animi quas ipsam vitae eaque?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius perspiciatis similique obcaecati, neque nemo consequatur reiciendis at ea natus, sunt error saepe vero assumenda explicabo animi quas ipsam vitae eaque?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius perspiciatis similique obcaecati, neque nemo consequatur reiciendis at ea natus, sunt error saepe vero assumenda explicabo animi quas ipsam vitae eaque?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius perspiciatis similique obcaecati, neque nemo consequatur reiciendis at ea natus, sunt error saepe vero assumenda explicabo animi quas ipsam vitae eaque?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius perspiciatis similique obcaecati, neque nemo consequatur reiciendis at ea natus, sunt error saepe vero assumenda explicabo animi quas ipsam vitae eaque?</p>
+            </section>
+        </div>
+    </div>
+
+    <!-- <div class="box">
+        <img src="images/background.jpeg" class="background">
+        <div class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+    </div> -->
+    
+    <!-- <div class="box">
+        <img src="images/close-1.png" class="close">
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+    </div> -->
+
+    <!-- <div class="div1">Div 1 Container</div>
+    <div class="div2">Div 2 Container</div>
+    <div class="div3">Div 3 Container</div>
+    <div class="div4">Div 4 Container</div> -->
+
+    <!-- <nav>
+        <ul>
+            <li>Menu 1</li>
+            <li>Menu 2
+                <div class="submenu">
+                    <div><a href="">Sub Menu 1</a></div>
+                    <div><a href="">Sub Menu 2</a></div>
+                    <div><a href="">Sub Menu 3</a></div>
+                    <div><a href="">Sub Menu 4</a></div>
+                    <div><a href="">Sub Menu 5</a></div>
+                </div>
+            </li>
+            <li>Menu 3</li>
+            <li>Menu 4</li>
+            <li>Menu 5</li>
+        </ul>
+    </nav>
+    <div>
+        <img src="images/1e650f11-7d32-43fc-8d6e-5b15e5747558.jpg" alt="">
+    </div> -->
+    
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+        }
+        img {
+            max-width: 100%;
+        }
+        .row {
+            background-color: purple;
+            display: flex;
+            flex-direction: row;
+            /* flex-wrap: wrap; */
+            gap: 5px;
+        }
+        .row > div {
+            background-color: pink;
+            /* margin: 5px;
+            width: 33.3333333%; */
+            flex-basis: 135px;
+            flex-grow: 1;
+        }
+
+        /* @media only screen and (max-width: 576px) {
+            .row div:nth-child(1) {
+                order: 2;
+                width: 100%;
+            }
+            .row div:nth-child(2) {
+                order: 1;
+                width: 100%;
+            }
+            .row div:nth-child(3) {
+                order: 3;
+                width: 100%;
+            }
+        } */
+
+        .grid {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 5px;
+        }
+        .grid div {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="row">
+        <div class="grid">
+            <div>Col1</div>
+            <div>Col1</div>
+            <div>Col1</div>
+        </div>
+        <div>MAIN CONTENT</div>
+        <div>MAIN CONTENT</div>
+    </div>
+    
+</body>
+</html>

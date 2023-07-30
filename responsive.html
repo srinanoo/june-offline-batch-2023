@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        img {
+            max-width: 100%;
+        }
+
+        /* div {
+            border: solid;
+            width: 100px;
+            height: 100px;
+        } */
+
+        .row1, .row2, .row3, .row4, .row5 {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .row1 div {
+            flex: 1 0 16.66666666%;
+        }
+
+        .row2 div {
+            flex: 1 0 25%;
+        }
+
+        .row3 div {
+            flex: 1 0 33.333333333%;
+        }
+
+        .row4 div {
+            flex: 1 0 50%;
+        }
+
+        @media only screen and (max-width: 1400px) {
+        }
+
+        @media only screen and (max-width: 1200px) {
+        }
+
+        @media only screen and (max-width: 992px) {
+        }
+
+        @media only screen and (max-width: 768px) {
+            .row1 div, .row2 div, .row3 div {
+                flex-basis: 50%;
+            }
+        }
+
+        @media only screen and (max-width: 576px) { /* mobile */
+            /* .row1 div, .row2 div {
+                flex-basis: 50%;
+            } */
+            .row1 div, .row2 div, .row3 div {
+                flex-basis: 100%;
+            }
+        }
+
+        /* .bg {
+            background-image: url('images/background.jpeg');
+        }
+        .bg div {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: black;
+            color: white;
+        } */
+    </style>
+</head>
+<body>
+
+    <!-- <div class="bg">
+        <div>
+            <h1>Heading</h1>
+            <i class="fa-brands fa-facebook"></i>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, magni corporis? Nihil eveniet impedit commodi quibusdam quae vitae distinctio molestiae aspernatur minus itaque repudiandae expedita veritatis, facere, quo, nemo perspiciatis.</p>
+            <button>Button</button>
+        </div>
+    </div> -->
+
+    <!-- <div>
+        <img src="images/1e650f11-7d32-43fc-8d6e-5b15e5747558.jpg" alt="">
+    </div>
+
+    <div>
+        <img src="images/bullet.png" alt="">
+    </div> -->
+
+    <div class="row1">
+        <div>
+            <img src="images/1e650f11-7d32-43fc-8d6e-5b15e5747558.jpg" alt=""><br>Project 1
+        </div>
+        <div>
+            <img src="images/1e650f11-7d32-43fc-8d6e-5b15e5747558.jpg" alt=""><br>Project 1
+        </div>
+        <div>
+            <img src="images/1e650f11-7d32-43fc-8d6e-5b15e5747558.jpg" alt=""><br>Project 1
+        </div>
+        <div>
+            <img src="images/1e650f11-7d32-43fc-8d6e-5b15e5747558.jpg" alt=""><br>Project 1
+        </div>
+        <div>
+            <img src="images/1e650f11-7d32-43fc-8d6e-5b15e5747558.jpg" alt=""><br>Project 1
+        </div>
+        <div>
+            <img src="images/1e650f11-7d32-43fc-8d6e-5b15e5747558.jpg" alt=""><br>Project 1
+        </div>
+    </div>
+
+    <div class="row2">
+        <div>
+            <img src="images/1e650f11-7d32-43fc-8d6e-5b15e5747558.jpg" alt=""><br>Project 1
+        </div>
+        <div>
+            <img src="images/1e650f11-7d32-43fc-8d6e-5b15e5747558.jpg" alt=""><br>Project 1
+        </div>
+        <div>
+            <img src="images/1e650f11-7d32-43fc-8d6e-5b15e5747558.jpg" alt=""><br>Project 1
+        </div>
+        <div>
+            <img src="images/1e650f11-7d32-43fc-8d6e-5b15e5747558.jpg" alt=""><br>Project 1
+        </div>
+    </div>
+
+    <div class="row3">
+        <div>
+            <img src="images/1e650f11-7d32-43fc-8d6e-5b15e5747558.jpg" alt=""><br>Project 1
+        </div>
+        <div>
+            <img src="images/1e650f11-7d32-43fc-8d6e-5b15e5747558.jpg" alt=""><br>Project 1
+        </div>
+        <div>
+            <img src="images/1e650f11-7d32-43fc-8d6e-5b15e5747558.jpg" alt=""><br>Project 1
+        </div>
+    </div>
+
+    <div class="row4">
+        <div>
+            <img src="images/1e650f11-7d32-43fc-8d6e-5b15e5747558.jpg" alt=""><br>Project 1
+        </div>
+        <div>
+            <img src="images/1e650f11-7d32-43fc-8d6e-5b15e5747558.jpg" alt=""><br>Project 1
+        </div>
+    </div>
+
+    <div class="row5">
+        <div>
+            <img src="images/1e650f11-7d32-43fc-8d6e-5b15e5747558.jpg" alt=""><br>Project 1
+        </div>
+    </div>
+    
+</body>
+</html>
