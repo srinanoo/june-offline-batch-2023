@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root {
+            --red-color: green;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+        img {
+            max-width: 100%;
+        }
+        body {
+            margin: 100px;
+        }
+        .simple, .rotate, .skew, .scale, .translate, .keyframes, .gradient {
+            background-color: var(--red-color);
+            width: 100px;
+            height: 100px;
+        }
+
+        .gradient {
+            background: linear-gradient(var(--red-color) 25%, green 25%, blue 25%, white 25%);
+        }
+
+        .keyframes {
+            animation-name: bgcolorframe;
+            animation-duration: 10s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-delay: 5s;
+        }
+
+        @keyframes bgcolorframe {
+            0% {
+                background-color: var(--red-color);
+                color: white;
+            }
+            50% {
+                background-color: brown;
+                color: white;
+            }
+            100% {
+                background-color: black;
+                color: white;
+            }
+            
+        }
+
+        .simple1, .simple2, .simple3, .simple4, .simple5 {
+            background-color: var(--red-color);
+            width: 100px;
+            height: 100px;
+            /* transition-property: width;
+            transition-duration: 5s; */
+            transition: width 5s, height 10s, transform 15s;
+        }
+
+        .simple1 {
+            transition-timing-function: linear;
+        }
+        .simple2 {
+            transition-timing-function: ease;
+        }
+        .simple3 {
+            transition-timing-function: ease-in;
+        }
+        .simple4 {
+            transition-timing-function: ease-out;
+        }
+        .simple5 {
+            transition-timing-function: ease-in-out;
+        }
+
+        .simple1:hover, .simple2:hover, .simple3:hover, .simple4:hover, .simple5:hover {
+            width: 300px;
+        }        
+
+        .simple {
+            transition-property: all;
+            transition-duration: 5s;
+            transition-delay: 3s;
+        }
+
+        .simple:hover {
+            height: 300px;
+            width: 300px;
+        }
+
+        .rotate, .skew, .scale img, .translate img {
+            transition-property: transform;
+            transition-duration: 3s;
+        }
+
+        .rotate:hover {
+            transform: rotate(45deg);
+        }
+
+        .skew:hover {
+            transform: skew(-40deg, -40deg);
+        }
+
+        .scale img:hover {
+            transform: scale(1.5, 1.5);
+        }
+
+        .translate img:hover {
+            transform: translate(20px, 50px);
+        }
+
+        input {
+            color: red;
+        }
+        ::placeholder {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="images/facebook.jpg">
+
+    <input type="text" placeholder="Enter your name:" >
+
+    <div class="gradient">
+        Gradient
+    </div>
+
+    <br><br>
+
+    <div class="keyframes">
+        <div>Content</div>
+    </div>
+
+    <br><br>
+
+    <div class="simple1">
+        Simple Content
+    </div>
+
+    <br><br>
+
+    <div class="simple2">
+        Simple Content
+    </div>
+
+    <br><br>
+    <div class="simple3">
+        Simple Content
+    </div>
+
+    <br><br>
+    <div class="simple4">
+        Simple Content
+    </div>
+
+    <br><br>
+    <div class="simple5">
+        Simple Content
+    </div>
+
+    <br><br>
+
+    <div class="rotate">
+        Div Content
+    </div>
+
+    <br><br>
+
+    <div class="skew">
+        Div Content
+    </div>
+
+    <br><br>
+
+    <div class="scale">
+        <img src="images/background.jpeg">
+    </div>
+
+    <br><br>
+
+    <div class="translate">
+        <img src="images/background.jpeg">
+    </div>
+    
+</body>
+</html>

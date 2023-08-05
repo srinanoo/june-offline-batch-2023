@@ -434,3 +434,23 @@ HTML TAG
         .... content / container ....
         ::after => in JS - append()
     </TAGNAME>
+
+Project Teams:
+    Alpha
+        - Vignesh R
+        - Vignesh B
+        - Daniel
+        - Siva
+    Beta
+        - Deepesh
+        - Vishaal
+        - Vikram
+        - Mokesh
+        - Janani
+
+    Gamma
+        - Siddharth
+        - Srinivasan
+        - Ragul Sharma
+        - Kishore
+        - Barath
