@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <form> -->
+        <input type="text" name="username" id="username" class="clsInput"><br>
+        <input type="text" name="password" id="password" class="clsInput"><br>
+
+        <input type="text" id="txt1"><br>
+        <input type="text" id="txt2"><br>
+
+        <!-- Subjects:<br>
+        <input type="checkbox" name="subjects" value="HTML"> HTML<br>
+        <input type="checkbox" name="subjects" value="CSS"> HTML<br>
+        <input type="checkbox" name="subjects" value="JavaScript"> HTML<br>
+        <input type="checkbox" name="subjects" value="ReactJs"> HTML<br> -->
+
+        <br>
+
+        <div id="div1">Div Container</div>
+        <div id="div2">
+            <strong>Div</strong> Container
+        </div>
+
+        <div id="div3"></div>
+        <div id="div4"></div>
+        <br>
+        <input type="button" value="Click" onclick="process();">
+    <!-- </form> -->
+
+    <script>
+        function process() {
+            console.log("Processing...");
+            // document.write();
+
+            // OLD
+                //document.<name of the form>.<name of form control>.value
+                    // let username = document.loginForm.username.value;
+                    // let password = document.loginForm.password.value;
+                    // console.log(username, password);
+
+                //document.forms[<index>].<name of form control>.value
+                    // let username = document.forms[0].username.value;
+                    // let password = document.forms[0].password.value;
+                    // console.log(username, password);
+
+            // Traditional
+                //document.getElementById(<id attribute value>).value
+                    let username = document.getElementById("username").value;
+                    let password = document.getElementById("password").value;
+                    console.log(username, password, "getElementById");
+                    document.getElementById("txt1").value = username;
+                    document.getElementById("txt2").value = password;
+
+                //document.getElementsByName(<name of form control>).value
+                    let username1 = document.getElementsByName("username")[0].value;
+                    let password1 = document.getElementsByName("password")[0].value;
+                    console.log(username1, password1, "getElementsByName");
+
+                //document.getElementsByClassName(<class attribute value>).value
+                    let username2 = document.getElementsByClassName("clsInput")[0].value;
+                    let password2 = document.getElementsByClassName("clsInput")[1].value;
+                    console.log(username2, password2, "getElementsByClassName");
+
+                //document.getElementsByTagName(<tag name of the input control>).value
+                    let username3 = document.getElementsByTagName("input")[0].value;
+                    let password3 = document.getElementsByTagName("input")[1].value;
+                    console.log(username3, password3, "getElementsByTagName");
+
+            // Modern
+                // document.querySelector("<CSS selector syntax>").value
+                    let username4 = document.querySelector("#username").value;
+                    let password4 = document.querySelector("#password").value;
+                    console.log(username4, password4, "querySelector");
+
+                // document.querySelectorAll("<CSS selector syntax>")[<index>].value
+                    let username5 = document.querySelectorAll(".clsInput")[0].value;
+                    let password5 = document.querySelectorAll(".clsInput")[1].value;
+                    console.log(username5, password5, "querySelectorAll");
+
+
+            let div1 = document.querySelector("#div1").innerHTML;
+            console.log(div1, "querySelector");
+            let div2 = document.querySelector("#div2").innerText;
+            console.log(div2, "querySelector - innerText");
+            let div3 = document.querySelector("#div2").innerHTML;
+            console.log(div3, "querySelector - innerHTML");
+
+            document.querySelector("#div3").innerText = div3;
+            document.querySelector("#div4").innerHTML = div3;
+        }
+
+    </script>
+    
+</body>
+</html>

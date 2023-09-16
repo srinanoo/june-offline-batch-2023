@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .clsDiv {
+            color: red;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="div1" class="temp">
+        Div 1 Container
+    </div>
+    <div id="div2"></div>
+
+    <button onclick="process();">Click</button>
+
+    <script>
+        function process() {
+            let div1 = document.querySelector("#div1");
+            div1.setAttribute("class", "clsDiv");
+            div1.setAttribute("style", "width: 50%; padding: 10px;");
+            div1.setAttribute("data-dinesh", 10);
+
+            console.log(div1.getAttribute("data-dinesh"));
+
+            // let div1Cls = ;
+            console.log(div1.getAttribute("id"));
+            let div2 = document.querySelector("#div2");
+            // div2.innerHTML = "New Container";
+            div2.setAttribute("class", div1.getAttribute("class"));
+            // div2.style.color = "green";
+            // div2.style.backgroundColor = "blue";
+
+            console.log(document.querySelectorAll(".clsDiv")[0].innerHTML);
+            console.log(document.querySelectorAll(".clsDiv")[1].innerHTML);
+        }
+    </script>
+    
+</body>
+</html>

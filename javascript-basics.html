@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>JavaScript</h1>
+    
+    <!-- External JS -->
+    <script src="js/scripts.js"></script>
+
+    <!-- Internal JS -->
+    <noscript>This will show in the browser when JavaScript is disabled in the browser</noscript>
+    <script>
+        // Internal scripts
+
+        /*
+        Multi line
+        Comment
+        */
+
+        // document.write("This is my first JS Code"); // DOM Way
+        // window.alert("This is my first JS Code"); // Window Object Way
+        // console.log("This is my first JS Code"); // Programmer/Developer purpose
+
+        // var a = 10;
+        // console.log(a);
+        // a = "Dinesh"; // reassigning...
+        // console.log(a);
+        // var a = "12.45"; // redeclaring and assignment
+        // console.log(a);
+
+        // let b = 20;
+        // console.log(b);
+        // b = "Dinesh";
+        // console.log(b);
+        // // let b = "12.45"; // redeclaring and assignment
+
+        // const c = "Dinesh"; // constant
+        // const c = "Dinesh"; //
+
+        // var a = 10; // global variable
+        // console.log(a, " - before... 1");
+
+        // function testFunc() {
+        //     var a = "Dinesh";
+        //     console.log(a, " - inside function... 2");
+        //     var b = 20; // local variable
+        //     console.log(b, " - b inside function... ");
+        // }
+        // testFunc();
+        // // console.log(b, " - b outside function... ");
+
+        // function testFunc2() {
+        //     console.log(a, " - inside function... 2.1");
+        //     c = 30;
+        //     console.log(c, " - c inside function... ");
+        // }
+        // testFunc2();
+        // console.log(c, " - c outside function... ");
+
+        // console.log(a, " - outside function... 3");
+
+
+        // let a = 10;
+        // console.log(a, " - outside function... 1");
+
+        // function testFunc() {
+        //     console.log(a, " - inside function... 2");
+        //     let b = 20;
+        //     console.log(b, " - b inside function...");
+        // }
+        // testFunc();
+        
+        // console.log(b, " - b outside function... 2");
+
+        // console.log(a, " - outside function... 2");
+
+        // for(var i=0; i<10; i++) {
+        //     console.log(i);
+        // }
+        // console.log(I, " - outside function");
+
+        // for(let j=0; j<10; j++) {
+        //     console.log(j);
+        // }
+        // console.log(j, " - outside function");
+
+        // var A = "Dinesh";
+
+        // let a = 10;
+        // // let b = 10;
+
+        // console.log(a);
+
+        // // let a = 20;
+
+        // var z = 10;
+        // var z = "Dinesh";
+
+        // // console.log(a == b);
+
+        // console.time();
+        // if(a < b) {
+        //     console.log("A is lesser than B");
+        //     console.log("If 2nd Line");
+        // } else {
+        //     console.log("A is not lesser than B");
+        //     console.log("Else 2nd Line");
+        // }
+        // console.timeEnd();
+
+        // console.time();
+        // (a < b) ? (console.log("A is lesser than B"), console.log("Ternary 2nd line")) : (console.log("A is not lesser than B"), console.log("Ternary Else 2nd line"));
+        // console.timeEnd();
+
+        // let studArr = [10001, "Dinesh", true];
+        // console.log(studArr);
+        // console.log(studArr[0]);
+        // console.log(studArr[1]);
+        // console.log(studArr[2]);
+        // console.log(studArr[3]);
+
+        // studArr[3] = "New Data";
+        // console.log(studArr[3]);
+
+        // studArr[6] = 123;
+        // console.log(studArr);
+
+        // studArr[1] = "New Name";
+        // console.log(studArr[1]);
+        // console.log(studArr);
+
+        // let empArr = [];
+        // empArr[0] = 123;
+        // empArr[1] = "New Name";
+        // empArr[2] = "Information";
+
+        // empArr[3] = [123, "", 789, 123];
+        // console.log(empArr);
+
+        // console.log(Array);
+
+        // let studArr = ["Dinesh", 10001, true];
+        // console.log(studArr);
+        // console.log(studArr[0]);
+        // console.log(studArr[1]);
+        // console.log(studArr[2]);
+
+        // let obj = {
+        //     name: "Dinesh",
+        //     "id": 10001,
+        //     active: true,
+        //     addNumbers: function(a, b) {
+        //         return a + b;
+        //     }
+        // };
+
+        // console.log(obj.addNumbers(1, 2));
+
+        // console.log(obj);
+        // console.log(obj.id);
+        // console.log(obj.name);
+        // console.log(obj.active);
+        // obj.dob = "01/01/2023";
+        // console.log(obj.dob);
+        // console.log(obj);
+        // console.log(obj["id"]);
+        // console.log(obj["name"]);
+        // console.log(obj["active"]);
+        // console.log(obj["dob"]);
+
+        // console.log(Object.keys(obj));
+        // console.log(Object.values(obj));
+        // console.log(Object.entries(obj));
+
+        // class Math {
+        //     sqrt(x) {
+        //         return ....
+        //     }
+
+        //     public static void main() {
+
+        //     }
+        // }
+        // let temp = new Math();
+        // temp.sqrt(10l);
+
+        // let employee = [
+        //     {
+        //         id: 1,
+        //         name: "Name1",
+        //         active: true,
+        //         department: ["Department1", "Department2"],
+        //         address: {
+        //             residential: "address1",
+        //             permenant: "address2",
+        //         }
+        //     }, 
+        //     2, 
+        //     3, 
+        //     4, 
+        //     5
+        // ];
+
+
+        // let employee = [
+        //     {
+        //         id: 1,
+        //         name: "Name1",
+        //         active: true,
+        //         department: ["Department1", "Department2"],
+        //         address: {
+        //             residential: "address1",
+        //             permenant: "address2",
+        //         }
+        //     }, 
+        //     {
+        //         id: 2,
+        //         name: "Name2",
+        //         active: false,
+        //         department: ["Department1"],
+        //         address: {
+        //             residential: "address1",
+        //             permenant: "address2",
+        //         }
+        //     }, 
+        //     {
+        //         id: 3,
+        //         name: "Name3",
+        //         active: true,
+        //         department: ["Department2"],
+        //         address: {
+        //             residential: "address1",
+        //             permenant: "address2",
+        //         }
+        //     }, 
+        //     {
+        //         id: 4,
+        //         name: "Name4",
+        //         active: false,
+        //         department: ["Department1", "Department2"],
+        //         address: {
+        //             residential: "address1",
+        //             permenant: "address2",
+        //         }
+        //     }, 
+        //     {
+        //         id: 5,
+        //         name: "Name5",
+        //         active: true,
+        //         department: ["Department1"],
+        //         address: {
+        //             residential: "address1",
+        //             permenant: "address2",
+        //         }
+        //     }
+        // ];
+        // console.log(employee[0]);
+        // console.log(employee[0].department);
+        // console.log(employee[0].department[0]);
+        // console.log(employee[1]);
+        // console.log(employee[1].department);
+        // console.log(employee[1].department[1]);
+        // console.log(employee[2]);
+        // console.log(employee[2].department);
+        // console.log(employee[2].department[2]);
+
+        // let a = 10;
+        // let b = 20;
+
+        // if(a > b) {
+        //     console.log("A is greater than B");
+        // } else if(a < b && a > 0) {
+        //     console.log("A is lesser B and greater than 0");
+        // } else {
+        //     console.log("A is not greater or lesser than B");
+        // }
+
+        // let color = "purple";
+        // switch(color) {
+        //     case "red":
+        //         console.log("Color is red");
+        //         break;
+        //     case "green":
+        //         console.log("Color is green");
+        //         break;
+        //     case "yellow":
+        //         console.log("Color is yellow");
+        //         break;  
+        //     default:
+        //         console.log("Color is not red or green or yellow");
+        // }
+
+        // if(color === "red")
+        //     console.log("Color is red");
+        // else if(color === "green")
+        //     console.log("Color is green");
+        // else if(color === "yellow")
+        //     console.log("Color is yellow");
+        // else
+        //     console.log("Color is not either red or green or yellow");
+
+        // let a = 1; // 1
+        // while(a < 10) { // 1<10
+        //     console.log(++a); // 1
+        // }
+
+        // let b = 10;
+        // while(b > 1) {
+        //     console.log(--b);
+        // }
+        
+        // let empArr = ["Emp1", "Emp2", "Emp3", "Emp4", "Emp5", "Emp6", "Emp7", "Emp8", "Emp9"];
+        // console.log(empArr[0]);
+        // console.log(empArr[1]);
+
+        // console.log("Size of the Array: ", empArr.length);
+        // let i = 0;
+        // while(i < empArr.length) {
+        //     console.log(empArr[i]);
+        //     i++;
+        // }
+
+        // let rows = 5;
+        // document.write("<table border=1>");
+        // while(rows > 0) {
+        //     document.write("<tr>");
+        //     let cols = 5;
+        //     while(cols > 0) {
+        //         document.write("<td>"+ cols + "</td>");
+        //         cols--;
+        //     }
+        //     document.write("</tr>");
+        //     rows--;
+        // }
+        // document.write("</table>");
+
+        // document.write("<table border=1>");
+        // for(let rows = 5; rows > 0; rows--) {
+        //     document.write("<tr>");
+        //     for(let cols = 5; cols > 0; cols--) {
+        //         document.write("<td>"+ cols + "</td>");
+        //     }
+        //     document.write("</tr>");
+        // }
+        // document.write("</table>");
+
+        // let studMarks = [65, 70, 35, 100, 45, 16, 55];
+        // let i = 0; 
+        // while(i < studMarks.length) {
+        //     if(studMarks[i] >= 90)
+        //         console.log("A Grade");
+        //     else if(studMarks[i] >= 80) 
+        //         console.log("B Grade");
+        //     else if(studMarks[i] >= 70)
+        //         console.log("C Grade");
+        //     else 
+        //         console.log("D Grade");
+
+        //     i++;
+        // }
+
+        // let a = 1;
+        // while(a < 10) {
+        //     console.log(a++);
+        // }
+
+        // do {
+        //     console.log(a);
+        //     a++;
+        // } while(a < 1);
+
+        // for(let a = 1; a < 10; a++) {
+        //     console.log(a);
+        // }
+
+        // let empArr = ["Emp1", "Emp2", "Emp3", "Emp4", "Emp5", "Emp6", "Emp7", "Emp8", "Emp9"];
+
+        // console.log("Size of the Array: ", empArr.length);
+        // // console.time();
+        // console.log("---- While loop ----");
+        // let i = 0;
+        // while(i < empArr.length) {
+        //     console.log(empArr[i]);
+        //     i++;
+        // }
+        // // console.timeEnd();
+
+        // // console.time();
+        // console.log("---- For loop ----");
+        // let len = empArr.length;
+        // for(let i = 0; i < len; i++) {
+        //     console.log(empArr[i]);
+        // }
+        // // console.timeEnd();
+
+        // console.log("---- for..in loop ----");
+        // for(let temp in empArr) {
+        //     console.log(empArr[temp]);
+        // }
+
+        // console.log("---- for..of loop ----");
+        // for(let temp of empArr) {
+        //     console.log(temp);
+        // }
+
+        // let obj = {
+        //     name: "Dinesh",
+        //     age: 20,
+        //     dob: "01/01/2023",
+        //     active: true,
+        //     dept: ["Dept1", "Dept2", "Dept3", "Dept4"]
+        // };
+        // // console.log(obj.name);
+        // // console.log(obj.age);
+        // // console.log(obj.dob);
+        // // console.log(obj.active);
+        // // console.log(obj.dept);
+
+        // // console.log(obj["name"]);
+        // // console.log(obj["age"]);
+        // // console.log(obj["dob"]);
+        // // console.log(obj["active"]);
+        // // console.log(obj["dept"]);
+
+        // for(let temp in obj) {
+        //     console.log(obj[temp]);
+        // }
+
+        // let employee = [
+        //     {
+        //         id: 1,
+        //         name: "Name1",
+        //         active: true,
+        //         department: ["Department1", "Department2"],
+        //         address: {
+        //             residential: "address1",
+        //             permenant: "address2",
+        //         }
+        //     }, 
+        //     {
+        //         id: 2,
+        //         name: "Name2",
+        //         active: false,
+        //         department: ["Department1"],
+        //         address: {
+        //             residential: "address1",
+        //             permenant: "address2",
+        //         }
+        //     }, 
+        //     {
+        //         id: 3,
+        //         name: "Name3",
+        //         active: true,
+        //         department: ["Department2"],
+        //         address: {
+        //             residential: "address1",
+        //             permenant: "address2",
+        //         }
+        //     }, 
+        //     {
+        //         id: 4,
+        //         name: "Name4",
+        //         active: false,
+        //         department: ["Department1", "Department2"],
+        //         address: {
+        //             residential: "address1",
+        //             permenant: "address2",
+        //         }
+        //     }, 
+        //     {
+        //         id: 5,
+        //         name: "Name5",
+        //         active: true,
+        //         department: ["Department1"],
+        //         address: {
+        //             residential: "address1",
+        //             permenant: "address2",
+        //         }
+        //     }
+        // ];
+
+        // for(let i in employee) {
+        //     // console.log(employee[i].department[0]);
+        //     console.log(typeof employee[i].address);
+        // }
+
+        // let ageOfPeople = [12, 15, 20, 8, 45, 35, 80, 44, 70, 11, 18, 20, 55, 66, 90, 7];
+        // let count = 0;
+        // for(let i = 0; i < ageOfPeople.length; i++) {
+        //     console.log("Counter: ", i);
+        //     if(count > 4) break;
+
+        //     if(ageOfPeople[i] >= 18) {
+        //         console.log(ageOfPeople[i]);
+        //         count++;
+        //     }
+        // }
+
+        // console.log("-----");
+        // for(let i of ageOfPeople) {
+        //     console.log("Counter: ", i);
+        //     if(i >= 18) {
+        //         console.log(i);
+        //     }
+        // }
+
+        // let num1 = 5;
+        // let num2 = 5;
+        // function testFunc(num1=0, num2=0) { // function definition
+        //     // console.log(num1 + num2);
+        //     // console.log(num1 - num2);
+        //     // console.log(num1 * num2);
+        //     // console.log(num1 / num2);
+        //     // console.log(num1 % num2);
+
+        //     // return num1 + num2; // return back to calling line | return the expression
+        //     let addNumbers = num1 + num2;
+
+        //     // return addNumbers; // returning the variable
+
+        //     return "Addition completed successfully" + addNumbers; // return the value....
+        // }
+        // let temp = testFunc();
+        // console.log(temp);
+        // // testFunc(10); // function calling/invoking line
+        // // testFunc(10, 20);
+
+        // function generateTable(rows=1, cols=1) {
+        //     document.write("<table border=1>");
+        //     for(let i = 0; i < rows; i++) {
+        //         document.write("<tr>");
+        //         for(let j = 0; j < cols; j++) {
+        //             document.write("<td>"+ j + "</td>");
+        //         }
+        //         document.write("</tr>");
+        //     }
+        //     document.write("</table>");
+        // }
+        // generateTable();
+        // // generateTable(2, 2);
+        // // generateTable(5, 5);
+
+        // function generateTable1(rows=1, cols=1) {
+        //     let output = "";
+        //     output += "<table border=1>";
+        //     for(let i = 0; i < rows; i++) {
+        //         output += "<tr>";
+        //         for(let j = 0; j < cols; j++) {
+        //             output += "<td>"+ j + "</td>";
+        //         }
+        //         output += "</tr>";
+        //     }
+        //     output += "</table>";
+           
+        //     return output;
+        // }
+        // document.write(generateTable1(2, 2));
+
+        // let arr = ["Name1", "Name2", "Name3", "Name4", "Name5", "Name6"];
+        // let i = 0;
+        // while(i < arr.length) {
+        //     console.log(arr[i]);
+        //     i++;
+        // }
+
+        // for(let i = 0; i < arr.length; i++) {
+        //     console.log(arr[i]);
+        // }
+
+        // for(let i in arr) {
+        //     console.log(arr[i]);   
+        // }
+
+        // for(let i of arr) {
+        //     console.log(i);   
+        // }
+
+        // let obj = {
+        //     id: 1,
+        //     name: "Name1",
+        //     age: 30,
+        //     active: true,
+        //     list: [1, 2, 3],
+        //     subjects: ["HTML", "CSS", "Bootstrap"],
+        //     marks: {
+        //         "HTML": 40,
+        //         "CSS": 30,
+        //         "Bootstrap": 20
+        //     }
+        // }
+        // console.log(obj.id, obj.name, obj.age, obj.active);
+        // console.log(obj["id"], obj["name"], obj["age"], obj["active"]);
+
+        // for(let temp in obj) {
+        //     console.log(obj[temp]);
+        // }
+
+        // function testFunc() {
+        //     console.log("This is a test function");
+        // }
+        // testFunc();
+
+        // function testFunc1(val1) {
+        //     console.log("This is a test function," + val1);
+        // }
+        // testFunc1(1);
+
+        // function testFunc2(val1, val2) {
+        //     console.log(val1 + val2);
+        // }
+        // testFunc2(1, 1);
+
+        // function testFunc3(val1, val2=0, val3, val4) {
+        //     console.log("OUTPUT", val1 + val2 - val3 * val4); // 1+1=2, 2-1=1, 1*1=1 | 1*1=1, 1+1=2, 2-1=1
+        // }
+        // // testFunc3(1);
+        // testFunc3(1, 1, 1, 1);
+
+        // function testFunc4(val1=0, val2=0) {
+        //     console.log(val1 + val2);
+        // }
+        // testFunc4();
+        // testFunc4(1);
+        // testFunc4(1, 10);
+
+        // function testFunc5() {
+        //     return "This is a test function";
+        // }
+        // console.log(testFunc5());
+        // let temp = testFunc5();
+        // console.log(temp);
+
+        // function testFunc() {
+        //     console.log("This is a test function");
+        // }
+        // testFunc();
+
+        // testFunc1 = function() {
+        //     console.log("This is an anonymous function");
+        // }
+        // testFunc1();
+
+        // testFunc2 = () => {
+        //     console.log("This is an arrow function");
+        // }
+        // testFunc2();
+
+        // let obj = {
+        //     add: function(x, y) {
+        //         return x+y;
+        //     }
+        // }
+        // console.log(obj.add(10, 10));
+
+        // function testFunc(x) {
+        //     console.log(x);
+        // }
+        // testFunc(1);
+
+        // testFunc2 = (x) => {
+        //     console.log(x);
+        // }
+        // testFunc2(2);
+
+        // testFunc3 = x => {
+        //     console.log(x);
+        // }
+        // testFunc3(2);
+
+        // testFunc4 = x => console.log(x);
+        // testFunc4(2);
+
+        // let arr = ["Name1", "Name2", "Name3", "Name4", "Name5", "Name6"];
+        // console.log("for...loop");
+        // for(let i = 0; i < arr.length; i++) {
+        //     console.log(arr[i]);
+        // }
+
+        // console.log("for..in ...loop");
+        // for(let i in arr) {
+        //     console.log(arr[i]);   
+        // }
+
+        // console.log("for..of ...loop");
+        // for(let i of arr) {
+        //     console.log(i);   
+        // }
+    
+        // console.log("forEach ...method");
+        // arr.forEach(generateArray);
+        // function generateArray(value, index, arr) {
+        //     console.log(index);
+        // }
+
+        // console.log("forEach ...method.. with arrow function...");
+        // arr.forEach(value => console.log(value, index));
+
+        let arr = [1, 2, 3, 4, 5, 6];
+        // arr.forEach(value => console.log(Math.sqrt(value)));
+
+        // let temp = arr.map(v => Math.sqrt(v));
+        // console.log(temp);
+
+        // let namesList = ["Dinesh", "Deepesh", "Siddharth", "Vignesh R", "Vignesh B", "Vishaal", "Srini", "Siva", "Vikram", "Daniel", "Janani", "Kishore"];
+        // let chkName = "S";
+        // for(let i = 0; i < namesList.length; i++) {
+        //     // if(namesList[i][0] === chkName) {
+        //     //     console.log(namesList[i]);
+        //     // }
+        //     // if(namesList[i].charAt(0) === chkName) {
+        //     //     console.log(namesList[i]);
+        //     // }
+        //     // if(namesList[i].indexOf(chkName) !== -1) {
+        //     //     console.log(namesList[i]);
+        //     // }
+        //     if(namesList[i].search(chkName) !== -1) {
+        //         console.log(namesList[i]);
+        //     }
+        // }
+
+        // for(let i of namesList) {
+        //     if(i[0] === chkName) {
+        //         console.log(i);
+        //     }
+        // }
+
+        // let filteredNames = [];
+        // namesList.forEach(v => {
+        //     if(v[0] === chkName) {
+        //         filteredNames.push(v);
+        //     }
+        // });
+        // console.log(filteredNames);
+
+        // let filteredNames1 = namesList.filter(v => v[0] !== chkName)
+        // console.log(filteredNames1);
+
+        // let sum = 0;
+        // for(let i = 0; i < arr.length; i++) {
+        //     sum += arr[i];
+        // }
+        // console.log(sum);
+
+        // let sum1 = 0;
+        // for(let i of arr) {
+        //     sum1 += i;
+        // }
+        // console.log(sum1);
+
+        // let sum2 = arr.reduce((dv, v) => dv + v);
+        // console.log(sum2);
+
+        let ageOfPeople = [12, 15, 20, 8, 45, 35, 80, 44, 70, 11, 18, 20, 55, 66, 90, 7];
+        // let temp = [];
+        // let count = 0;
+        let flag = true;
+        for(let i = 0; i < ageOfPeople.length; i++) {
+            // if(ageOfPeople[i] >= 18) {
+            //     // temp.push(1);
+            //     count++;
+            // } else {
+            //     continue;
+            //     // temp.push(0);
+            // }
+
+            if(ageOfPeople[i] < 18) {
+                flag = false;
+                break;
+            }
+        }
+        console.log(flag);
+        // console.log(count);
+        // if(count == 0) {
+        //     console.log(false)
+        // } else console.log(true);
+
+        let flag1 = ageOfPeople.every(v => v >= 18);
+        console.log(flag1);
+
+        let flag2 = ageOfPeople.some(v => v >= 18);
+        console.log(flag2);
+    </script>
+</body>
+</html>
