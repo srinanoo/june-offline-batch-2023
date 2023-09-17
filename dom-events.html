@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div2 {
+            border: solid;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <button id="btnClick">Click</button><br><br>
+
+    <textarea id="taMessage"></textarea>
+    <div id="counter"></div>
+
+    <div id="div1">Div Container</div>
+
+    <div id="div2"></div>
+    <div id="coordinates"></div> -->
+
+    <!-- Cities:<br>
+    <select id="cities">
+        <option value="1">Chennai</option>
+        <option value="2">Mumbai</option>
+        <option value="3">Bengaluru</option>
+        <option value="4">Hyderabad</option>
+        <option value="5">Patna</option>
+        <option value="6">Cochin</option>
+    </select>
+
+    <br><br>
+
+    States:<br>
+    <select id="state">
+        <option value="1">Tamilnadu</option>
+        <option value="2">Maharashtra</option>
+        <option value="3">Karnataka</option>
+        <option value="4">Telegana</option>
+        <option value="5">Bihar</option>
+        <option value="6">Kerala</option>
+    </select> -->
+
+    <!-- <input type="text" id="txt1"><br>
+    <input type="text" id="txt2"><br>
+    <input type="text" id="txt3"><br>
+    <input type="text" id="txt4"><br>
+    <input type="text" id="txt5"><br> -->
+
+    <div id="container">
+        <div id="circle" class="clsC clsObject">Circle</div>
+        <div id="square" class="clsS clsObject">Square</div>
+        <div id="triangle" class="clsT clsObject">Triangle</div>
+    </div>
+
+    <script>
+        // document.getElementById("circle").addEventListener("click", () => {
+        //     console.log("Circle clicked");
+        // });
+        // document.getElementById("square").addEventListener("click", () => {
+        //     console.log("Square clicked");
+        // });
+        // document.getElementById("triangle").addEventListener("click", () => {
+        //     console.log("Triangle clicked");
+        // });
+
+        document.getElementById("container").addEventListener("click", (e) => {
+            console.log(e);
+            console.log(e.target.id);
+        });
+
+        // document.getElementById("btnClick").addEventListener("dblclick", () => {
+        //     console.log("Button is clicked");
+        // });
+
+        // document.getElementById("taMessage").addEventListener("keydown", () => {
+        //     let message = document.getElementById("taMessage");
+        //     document.getElementById("counter").innerText = message.value.length;
+        // });
+
+        // document.getElementById("div1").addEventListener("mouseenter", () => {
+        //     let div1 = document.getElementById("div1");
+        //     div1.style.color = "red";
+        // });
+        // document.getElementById("div1").addEventListener("mouseleave", () => {
+        //     let div1 = document.getElementById("div1");
+        //     div1.style.color = "black";
+        // });
+
+        // document.getElementById("div2").addEventListener("mousemove", (event) => {
+        //     let x = event.clientX;
+        //     let y = event.clientY;
+        //     document.getElementById("coordinates").innerText = x + ", " + y;
+        // });
+
+        // document.getElementById("cities").addEventListener("change", () => {
+        //     document.getElementById("state").value = document.getElementById("cities").value;
+        // });
+
+        // document.getElementById("txt3").addEventListener("focus", () => {
+        //     let txt3 = document.getElementById("txt3");
+        //     if(txt3.value === "") {
+        //         txt3.setAttribute("style", "background-color: red; color: white");
+        //         txt3.focus();
+        //     } else {
+        //         txt3.setAttribute("style", "background-color: green; color: white");
+        //     }
+        // });
+        // document.getElementById("txt3").addEventListener("blur", () => {
+        //     let txt3 = document.getElementById("txt3");
+        //     if(txt3.value === "") {
+        //         txt3.setAttribute("style", "background-color: red; color: white");
+        //         txt3.focus();
+        //     } else {
+        //         txt3.setAttribute("style", "background-color: green; color: white");
+        //     }
+        // });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+        Subjects:<br>
+        <input type="checkbox" name="subjects" value="HTML"> HTML<br>
+        <input type="checkbox" name="subjects" value="CSS"> CSS<br>
+        <input type="checkbox" name="subjects" value="JavaScript"> JavaScript<br>
+        <input type="checkbox" name="subjects" value="ReactJs"> ReactJs<br> 
+        <input type="checkbox" name="subjects" value="MongoDB"> MongoDB<br> 
+
+        <input type="button" value="Click" id="btnClick">
+    </form>
+
+    <div class="clsDiv">Div1</div>
+    <div><strong>Div2</strong></div>
+    <div>Div3</div>
+    <div>Div4</div>
+    <div>Div5</div>
+
+    <script>
+        document.getElementById("btnClick").addEventListener("click", () => {
+            let subjectsList = document.getElementsByName("subjects");
+            console.log(subjectsList.length);
+            // if(subjectsList[0].checked) {
+            //     console.log(subjectsList[0].value);
+            // }
+            // if(subjectsList[1].checked) {
+            //     console.log(subjectsList[1].value);
+            // }
+            // if(subjectsList[2].checked) {
+            //     console.log(subjectsList[2].value);
+            // }
+            // if(subjectsList[3].checked) {
+            //     console.log(subjectsList[3].value);
+            // }
+            for(let i in subjectsList) {
+                if(subjectsList[i].checked) {
+                    console.log(subjectsList[i].value);
+                }
+            }
+
+            let divList = document.querySelectorAll("div");
+            console.log(divList);
+            for(let i in divList) {
+                console.log(divList[i].innerHTML, i, " - div");
+            }
+            for(let i = 0; i < divList.length; i++) {
+                console.log(divList[i].innerHTML, i, " - div");
+            }
+
+            Object.entries(obj);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <button id="alert">Alert</button>
+    <button id="confirm">Confirm</button>
+    <button id="prompt">Prompt</button> -->
+
+    <div id="time"></div>
+
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+
+    <script>
+        // document.getElementById("alert").addEventListener("click", () => {
+        //     window.alert("This is an Alert box");
+        // });
+        // document.getElementById("confirm").addEventListener("click", () => {
+        //     let confirmation = confirm("This is a Confirmation box");
+        //     console.log(confirmation);
+        //     if(confirmation) {
+        //         console.log("YES");
+        //     }
+        // });
+        // document.getElementById("prompt").addEventListener("click", () => {
+        //     let name = prompt("Enter your Name:");
+        //     console.log(name);
+        //     // if(confirmation) {
+        //     //     console.log("YES");
+        //     // }
+        // });
+
+        let timer = "";
+        document.getElementById("start").addEventListener("click", () => {
+            timer = setInterval(() => {
+                let dt = new Date();
+                document.getElementById("time").innerHTML = dt.toLocaleTimeString();
+            }, 1000);
+        });
+
+        document.getElementById("stop").addEventListener("click", () => {
+            clearInterval(timer);
+        });
+
+        setTimeout(() => {
+            console.log("Timer has stopped");
+        }, 3000)
+    </script>
+    
+</body>
+</html>
