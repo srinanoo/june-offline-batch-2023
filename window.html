@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body id="body">
 
     <!-- <button id="alert">Alert</button>
     <button id="confirm">Confirm</button>
@@ -18,6 +18,16 @@
 
 
     <script>
+        document.getElementById("body").addEventListener("keypress", (e) => {
+            console.log(e.keyCode);
+            if(e.keyCode == 13) {
+                timer = setInterval(() => {
+                    let dt = new Date();
+                    document.getElementById("time").innerHTML = dt.toLocaleTimeString();
+                }, 1000);
+            }
+        });
+
         // document.getElementById("alert").addEventListener("click", () => {
         //     window.alert("This is an Alert box");
         // });

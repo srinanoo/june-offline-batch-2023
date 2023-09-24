@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="name" placeholder="Name:">
+    <input type="text" id="age" placeholder="Age:">
+
+    <button id="btnClick">Set Item</button>
+    <div id="data"></div>
+    <button id="btnGetItem">Get Item</button>
+    <button id="btnDeleteItem">Delete Item</button>
+
+    <script>
+        // document.getElementById("btnClick").addEventListener("click", () => {
+        //     sessionStorage.setItem("name", "Dinesh");
+        // });
+
+        // document.getElementById("btnGetItem").addEventListener("click", () => {
+        //     document.getElementById("data").innerHTML = sessionStorage.getItem("name");
+        // });
+
+        // document.getElementById("btnDeleteItem").addEventListener("click", () => {
+        //     sessionStorage.removeItem("name");
+        // });
+
+        let userData = [];
+
+        document.getElementById("btnClick").addEventListener("click", () => {
+            // let userData = [
+            //     {
+            //         "id": 1,
+            //         "name": "Name 1",
+            //         "age": 25,
+            //         "address": {
+            //             "temp": "Some address...",
+            //             "permanent": "Some permanent address..."
+            //         },
+            //         "department": [1, 2, 3]
+            //     },
+            //     {
+            //         "id": 2,
+            //         "name": "Name 2",
+            //         "age": 25,
+            //         "address": {
+            //             "temp": "Some address...",
+            //             "permanent": "Some permanent address..."
+            //         },
+            //         "department": [1, 2, 3]
+            //     },
+            //     {
+            //         "id": 3,
+            //         "name": "Name 3",
+            //         "age": 25,
+            //         "active": true,
+            //         "address": {
+            //             "temp": "Some address...",
+            //             "permanent": "Some permanent address..."
+            //         },
+            //         "department": [1, 2, 3]
+            //     }
+            // ]
+            let name = document.getElementById("name").value;
+            let age = document.getElementById("age").value;
+            let obj = {};
+            obj.name = name;
+            obj.age = age;
+            let address = {};
+            address.temp = "Some address...";
+            address.permanent = "Some permanent address...";
+            obj.address = address;
+            let deptArr = [1,2,3];
+            // console.log(obj);
+            userData.push(obj);
+            // console.log(userData);
+            localStorage.setItem("userData", JSON.stringify(userData));
+            // console.log(userData[0]);
+
+            console.log(address, Array.isArray(address));
+            console.log(deptArr, Array.isArray(deptArr));
+
+            // if(Array.isArray(deptArr)) {
+
+            // } else if(typeof address == "object") {
+            // } else {
+
+            // }
+        });
+
+        document.getElementById("btnGetItem").addEventListener("click", () => {
+            let userInfo = JSON.parse(localStorage.getItem("userData"));
+            console.log(userInfo[0]);
+            console.log(typeof userInfo);
+        });
+
+        document.getElementById("btnDeleteItem").addEventListener("click", () => {
+            localStorage.removeItem("userData");
+        });
+    </script>
+    
+</body>
+</html>

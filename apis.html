@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="result"></div>
+
+    <p><button id="btnFact">Show Fact</button></p>
+    <p><button id="btnFactAsync">Show Fact using Async/Await</button></p>
+
+    <script>
+        document.getElementById("btnFactAsync").addEventListener("click", async () => {
+            let res = await fetch("https://catfact.ninja/fact");
+            let data = await res.json();
+            console.log(data);
+            console.log(data.fact);
+            console.log(data.length);
+            let result = document.getElementById("result");
+            let factDiv = document.createElement("div");
+            factDiv.innerHTML = data.fact;
+            factDiv.setAttribute("style", "color: red; background-color: white;");
+
+            let lengthDiv = document.createElement("div");
+            lengthDiv.innerHTML = data.length;
+
+            result.append(factDiv, lengthDiv);
+        });
+
+        document.getElementById("btnFact").addEventListener("click", () => {
+            let obj = {
+                "First Name" : "John",
+                "id": 1
+            }
+            console.log(obj["First Name"]);
+            console.log(obj.id);
+            console.log(obj[temp]);
+            fetch("https://catfact.ninja/fact")
+                .then((res) => res.json())
+                    .then((data) => {
+                        console.log(data);
+                        console.log(data.fact);
+                        console.log(data.length);
+                        // let output = '<div>Fact: ' + data.fact + '</div>';
+                        // output += '<div>Length: '+ data.length + '</div>';
+                        // console.log(output);
+                        // document.getElementById("result").innerHTML = output;
+
+                        let result = document.getElementById("result");
+                        let factDiv = document.createElement("div");
+                        factDiv.innerHTML = data.fact;
+                        factDiv.setAttribute("style", "color: red; background-color: white;");
+
+                        let lengthDiv = document.createElement("div");
+                        lengthDiv.innerHTML = data.length;
+
+                        result.append(factDiv, lengthDiv);
+                    });
+        });
+    </script>
+    
+</body>
+</html>
