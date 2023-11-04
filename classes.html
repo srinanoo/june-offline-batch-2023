@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="products">
+        <p class="product">Product 1</p>
+        <p class="price">100</p>
+        <button id="btnAdd" class="clsAdd" id="1">Add</button>
+    </div>
+    <div class="products">
+        <p class="product">Product 1</p>
+        <p class="price">100</p>
+        <button id="btnAdd" class="clsAdd" id="1">Add</button>
+    </div>
+    <div class="products">
+        <p class="product">Product 1</p>
+        <p class="price">100</p>
+        <button id="btnAdd" class="clsAdd" id="1">Add</button>
+    </div>
+    <button id="btnAdd1">Add 1</button>
+
+    <script>
+
+        let finalData = [];
+
+        document.querySelectorAll(".products").addEventListener("click", (e) => {
+            console.log(e.target);
+        });
+
+        document.getElementById("btnAdd").addEventListener("click", () => {
+            let data = localStorage.getItem("cart");
+            if(data != null) data = JSON.parse(data);
+            console.log(data);
+            if(data == null) {
+                finalData.push({id: 1, price: 100, qty: 1});
+                localStorage.setItem("cart", JSON.stringify(finalData));
+            }
+        });
+
+        document.getElementById("btnAdd1").addEventListener("click", () => {
+            let data = localStorage.getItem("cart");
+            if(data != null) data = JSON.parse(data);
+            console.log(data);
+            if(data == null) {
+                data.push({id: 2, price: 200, qty: 1});
+                localStorage.setItem("cart", JSON.stringify(data));
+            } else {
+                data.push({id: 2, price: 200, qty: 1});
+                localStorage.setItem("cart", JSON.stringify(data));
+            }
+        });
+
+        // function testFunc(a, b) {
+        //     console.log("Test Function: " + a + ", " + b);
+        // }
+        // testFunc(1, 1);
+        // testFunc(10, 10);
+
+        // let obj = {
+        //     id: 1,
+        //     name: "Dinesh"
+        // }
+        // console.log(obj.id);
+        // console.log(obj.name);
+        // obj.id = 2;
+        // console.log(obj.id);
+        // obj.active = true;
+        // console.log(obj.active);
+
+        // // function brand(brand) {
+        // //     return brand;
+        // // }
+
+        // function userFunc(i, n, a, b) {
+        //     this.id = i;
+        //     this.name = n;
+        //     this.active = a;
+        //     // this.brand = brand(b);
+
+        //     this.addNumber = (x, y) => {
+        //         console.log("Adding 2 numbers : " + (x+y));
+        //     }
+
+        //     this.getDetails = () => {
+        //         return "My details are: id = " + this.id + " name = " + this.name + " active = " + this.active + " brand = " + this.brand;
+        //     }
+        // }
+        // let userObj = new userFunc(1, "name", true, "Crampete"); // instantiation / instance
+        // console.log(userObj.id);
+        // userObj.id = 100000;
+        // console.log(userObj.id);
+        // userObj.addNumber(1, 2);
+        // console.log(userObj.getDetails());
+
+        // let userObj1 = new userFunc(); // instantiation / instance
+        // console.log(userObj1.id);
+        // userObj1.addNumber(1, 2);
+        // console.log(userObj1.getDetails());
+
+        // class Brand {
+        //     constructor(brand) {
+        //         this.brand = brand;
+        //     }
+        // }
+
+        // class userClass {
+        //     constructor(i, n, a, brand) { // automatically called when class instance is created; initializing of the variables/value...
+        //         this.id = i;
+        //         this.name = n;
+        //         this.active = a;
+        //         this.brand = brand;
+        //     }
+
+        //     getDetails() { // member methods...
+        //         return "My details are: id = " + this.id + " name = " + this.name + " active = " + this.active;
+        //     }
+        // }
+        // let userCls = new userClass(1, "Dinesh", true); // instantiation / instance
+        // console.log(userCls.getDetails());
+
+        // let userCls1 = new userClass(2, "NEw Name", false); // instantiation / instance
+        // console.log(userCls1.getDetails());
+
+        // class ParentClass {
+        //     constructor(pname, pactive) {
+        //         this.parentName = pname;
+        //         this.parentActive = pactive;
+        //         this.parentAge = 100;
+        //     }
+        //     getParentDetails() {
+        //         return this.parentActive + ", " + this.parentAge + ", " + this.parentName;
+        //     }
+        // }
+
+        // class ChildClass extends ParentClass {
+        //     constructor(name, active, pname, pactive) {
+        //         super(pname, pactive);
+        //         this.name = name;
+        //         this.active = active;
+        //     }
+            
+        //     getChildDetails() {
+        //         let parent = this.getParentDetails();
+        //         return "My details are: name = " + this.name + " active = " + this.active + " Parent: " + parent;
+        //     }
+        // }
+        // let childCls = new ChildClass("Dinesh", true, "Parent Name", false);
+        // console.log(childCls.getChildDetails());
+        // console.log(childCls.parentName, childCls.parentActive, childCls.parentAge);
+        // console.log(childCls.getParentDetails());
+
+
+        // function somename(a) {
+        //     console.log(a);
+        //     a++;
+        //     if(a<=10) somename(a);
+        // }
+        // somename(0);
+
+        // let arr = ["a", "b", "c", "d", "e"];
+        // console.time();
+        // for(let i=0; i<arr.length; i++) {
+        //     console.log(arr[i]);
+        // }
+        // console.timeEnd();
+
+        // console.time();
+        // arr.forEach(v => console.log(v));
+        // console.timeEnd();
+
+        // for(let i=0; i<6; i++) {
+        //     console.log("i - ", i);
+        //     setTimeout(() => {
+        //         console.log(i);
+        //     }, 5000);
+        // }
+        // console.log(i);
+
+        // for(var i=0; i<6; i++) {
+        //     console.log("i - ", i)
+        //     // setTimeout(() => {
+        //     //     console.log(i);
+        //     // }, 5000);
+        // }
+        // console.log(i);
+    </script>
+    
+</body>
+</html>
