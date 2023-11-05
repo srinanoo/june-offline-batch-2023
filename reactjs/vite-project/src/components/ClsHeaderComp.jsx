@@ -1,9 +1,23 @@
 import React from "react";
 
 class ClsHeaderComponent extends React.Component {
-    // constructor() {
-    //     // initialize all member variables...
-    // }
+    constructor() {
+        super();
+        // initialize all member variables...
+        this.logged = true;
+
+        this.name = "Dinesh - Class";
+
+        this.details = {
+            "role": "",
+            "designation": "Web Developer",
+            "email": "srinanoo@gmail.com",
+        }
+
+        this.menu = ["Projects", "About", "Contact"];
+
+        this.output = this.menu.map((v, i) => <div key={i}>{v}</div>);
+    }
 
     render() {
         return (
@@ -13,17 +27,32 @@ class ClsHeaderComponent extends React.Component {
                         <img src="images/Dinesh.jpg" alt="" className="logo" />
                     </div>
                     <div>
-                        <h3>Dinesh</h3>
-                        <div>Technical Trainer</div>
-                        <div>Web Developer</div>
-                        <div>Email Me</div>
+                        <h3>{
+                            (this.name!=="") ? this.name : ""
+                            }</h3>
+                        <div>{this.details?.role}</div>
+                        <div>{this.details?.designation}</div>
+                        <div>{this.details?.email}</div>
                     </div>
                 </div>
-                <div className="row1section2">
-                    <div>Projects</div>
-                    <div>About Me</div>
-                    <div>Contact Me</div>
-                </div>
+                {
+                    this.logged &&
+                        <>
+                            <div className="row1section2">
+                                {
+                                    this.menu.map((v, i) => {
+                                        return (
+                                            <div key={i}>{v}</div>
+                                        )
+                                    })
+                                }
+                            </div>
+                            <div>
+                                {this.output}
+                            </div>
+                        </>
+                }
+                
             </div>
         )
     }
