@@ -28,7 +28,7 @@ class ClsHeaderComponent extends React.Component {
                     </div>
                     <div>
                         <h3>{
-                            (this.name!=="") ? this.name : ""
+                            (this.name!="") ? this.name : ""
                             }</h3>
                         <div>{this.details?.role}</div>
                         <div>{this.details?.designation}</div>

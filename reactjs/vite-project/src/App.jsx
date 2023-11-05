@@ -11,6 +11,9 @@ import ClsHeaderComponent from './components/ClsHeaderComp'
 import ClsProjectsComponent from './components/ClsProjectsComp'
 import ClsAboutComponent from './components/ClsAboutComp'
 import ClsFooterComponent from './components/ClsFooterComp'
+import { MutipleFunction1, MutipleFunction2, MutipleFunction3 } from './components/MultipleFuncComp'
+import { MultipleClsComponent1, MultipleClsComponent2, MultipleClsComponent3 } from './components/MultipleClsComp'
+import { MultipleFuncClsComponent1, MultipleFuncClsComponent2 } from './components/MultipleFuncClsComp'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -38,7 +41,7 @@ function App() {
       description: 'Project 4 Description goes here...',
       image: 'images/background.jpeg',
     }
-  ]
+  ];
 
   return (
     <>      
@@ -46,11 +49,20 @@ function App() {
       <ProjectsComponent name="Dinesh" details={projectDetails} />
       <AboutComponent />
       <FooterComponent /> */}
+      {/* <MutipleFunction1 />
+      <MutipleFunction2 />
+      <MutipleFunction3 /> */}
 
-      <ClsHeaderComponent />
+      {/* <ClsHeaderComponent />
       <ClsProjectsComponent name="Dinesh" details={projectDetails} />
       <ClsAboutComponent />
-      <ClsFooterComponent />
+      <ClsFooterComponent /> */}
+      {/* <MultipleClsComponent1 />
+      <MultipleClsComponent2 />
+      <MultipleClsComponent3 /> */}
+
+      <MultipleFuncClsComponent1 />
+      <MultipleFuncClsComponent2 />
     </>
   )
 }
