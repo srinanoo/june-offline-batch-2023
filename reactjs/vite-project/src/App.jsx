@@ -14,6 +14,8 @@ import ClsFooterComponent from './components/ClsFooterComp'
 import { MutipleFunction1, MutipleFunction2, MutipleFunction3 } from './components/MultipleFuncComp'
 import { MultipleClsComponent1, MultipleClsComponent2, MultipleClsComponent3 } from './components/MultipleClsComp'
 import { MultipleFuncClsComponent1, MultipleFuncClsComponent2 } from './components/MultipleFuncClsComp'
+import FnStateComponent from './components/FnStateComp'
+import ClsStateComponent from './components/ClsStateComp'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -61,8 +63,14 @@ function App() {
       <MultipleClsComponent2 />
       <MultipleClsComponent3 /> */}
 
+      {/* <MultipleFuncClsComponent1 />
+      <MultipleFuncClsComponent2 /> */}
+
+      <FnStateComponent name="Dinesh" />
+
+      {/* <ClsStateComponent /> */}
+
       <MultipleFuncClsComponent1 />
-      <MultipleFuncClsComponent2 />
     </>
   )
 }
