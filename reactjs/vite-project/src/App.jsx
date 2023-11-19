@@ -16,6 +16,8 @@ import { MultipleClsComponent1, MultipleClsComponent2, MultipleClsComponent3 } f
 import { MultipleFuncClsComponent1, MultipleFuncClsComponent2 } from './components/MultipleFuncClsComp'
 import FnStateComponent from './components/FnStateComp'
 import ClsStateComponent from './components/ClsStateComp'
+import FnFormComponent from './components/FnFormComp'
+import FnAPIComponent from './components/FnAPIComp'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -66,11 +68,15 @@ function App() {
       {/* <MultipleFuncClsComponent1 />
       <MultipleFuncClsComponent2 /> */}
 
-      <FnStateComponent name="Dinesh" />
+      {/* <FnStateComponent name="Dinesh" /> */}
 
       {/* <ClsStateComponent /> */}
 
-      <MultipleFuncClsComponent1 />
+      {/* <MultipleFuncClsComponent1 /> */}
+
+      {/* <FnFormComponent /> */}
+      
+      <FnAPIComponent />
     </>
   )
 }

@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { MultipleFuncClsComponent2 } from "./MultipleFuncClsComp";
 
 // function FnStateComponent() {
 //     return (
@@ -49,6 +50,8 @@ export default function FnStateComponent(props) {
         id: 1,
         name: "Name1"
     });
+
+    const [logged, setLogged] = useState(false);
     
     const testFunc = () => {
         // console.log("before changing : ", name);
@@ -64,12 +67,26 @@ export default function FnStateComponent(props) {
     console.log("render...")
     return (
         <>
-            <p>Props: {props.name}</p>
-            <p>State: {name}</p>
-            <p>Count: {count}</p>
-            <p>Users List: {usersList}</p>
-            <p>User Object: {userObject.id} - {userObject.name}</p>
-            <p><button onClick={testFunc}>Change Name</button></p>
+            {
+                logged
+                    ?
+                    <>
+                        <MultipleFuncClsComponent2 />
+
+                        <p>Props: {props.name}</p>
+                        <p>State: {name}</p>
+                        <p>Count: {count}</p>
+                        <p>Users List: {usersList}</p>
+                        <p>User Object: {userObject.id} - {userObject.name}</p>
+                        <p><button onClick={testFunc}>Change Name</button></p>
+                        <button onClick={() => setLogged(false)}>Logout</button>
+                    </>
+                    :
+                    <p>
+                        <button onClick={() => setLogged(true)}>Login</button>
+                    </p>
+            }
+            
         </>
     )
 }
