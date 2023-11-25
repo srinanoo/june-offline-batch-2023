@@ -27,39 +27,20 @@ export default function FnAPIComponent() {
 
     async function fetchData() {
         if(country.length >= 5) {
-            // let res = await fetch(`http://universities.hipolabs.com/search?country=$-{country}`);
-            // let data = await res.json();
-            // let temp = [];
-            // for(let i = 0; i < 10; i++) {
-            //     temp.push(data[i]);
-            // }
-            // if(universitiesList !== temp)
-            //     setUniversitiesList(temp);
-
-            // for axios using async and await
-            // let res = await axios.get(`http://universities.hipolabs.com/search?country=${country}`);
-            // let data = res.data;
-            // let temp = [];
-            // for(let i = 0; i < 10; i++) {
-            //     temp.push(data[i]);
-            // }
-            // if(universitiesList !== temp)
-            //     setUniversitiesList(temp);
-
-            // for axios using promises
-            let obj = {
-                "country" : country
+            // let res = await fetch(`http://universities.hipolabs.com/search?country=${country}`, 
+            //     { 
+            //         method: 'POST', 
+            //         'Content-Type': 'application/json', 
+            //         body: JSON.stringify(country)
+            //     });
+            let res = await axios.get(`http://universities.hipolabs.com/search?country=${country}`);
+            let data = await res.json();
+            let temp = [];
+            for(let i = 0; i < 10; i++) {
+                temp.push(data[i]);
             }
-            axios.get(`http://universities.hipolabs.com/search?country=${country}`)
-                .then(res => {
-                    let data = res.data;
-                    let temp = [];
-                    for(let i = 0; i < 10; i++) {
-                        temp.push(data[i]);
-                    }
-                    if(universitiesList !== temp)
-                        setUniversitiesList(temp);
-                })
+            if(universitiesList !== temp)
+                setUniversitiesList(temp);
         }
     }
 
